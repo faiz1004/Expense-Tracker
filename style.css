@@ -6,16 +6,16 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
-    
+    height: 100vh;
 }
+
 .main{
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    height: 100%;
     position: relative;
     width: 100%;
 }
@@ -115,9 +115,7 @@ form input, form select, form button {
 .w-full{
     width: 100%;
 }
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:2px 0;
+.overflow{
+    overflow-y: scroll;
+    max-height: 8.8rem;
 }

@@ -11,12 +11,12 @@
 
     
     <div class="container">
-        <h1>Expense Tracker</h1>
+        <h1 style="font-size: 2.6rem; margin-bottom: 15px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Expense Tracker</h1>
         <div class="balance" >
-            <h2 id="totalB">Current Balance: ₹<span id="balance">0.00</span></h2>
+            <h2>Current Balance: <span id="totalB">₹<span id="balance">0.00</span></h2></span>
         </div>
         <div class="transaction-form">
-            <h3>Add New Transaction</h3>
+            <h3 style="margin-bottom: 5px;">Add New Transaction</h3>
             <form id="transactionForm">
                 <input type="text" id="transactionName" placeholder="Transaction Name" required >
                 <input type="number" id="transactionAmount" placeholder="Amount" required >
@@ -29,18 +29,14 @@
         </div>
         <div class="transaction-history">
             <h3>Transaction History</h3>
-            <ul id="transactionList"></ul>
+            <ul id="transactionList" class="overflow"></ul>
             <button id="clearAllBtn" class="clear-btn">Clear All Transactions</button>
         </div>
     </div>
   
    
 </div>
-<footer>
-    <div class="footer">
-        <h2>Developed by Faiz Mohammad</h2>
-    </div>
-</footer>
+
 
 
     <script src="script.js"></script>
