@@ -1,0 +1,123 @@
+/* style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    
+}
+.main{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    position: relative;
+    width: 100%;
+}
+.main::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background: url('./expImage.jpg');
+    background-size: 100%;
+    opacity: 0.4;
+}
+
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.balance {
+    margin-bottom: 20px;
+    color: rgb(48, 148, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.transaction-form, .transaction-history {
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    
+   
+}
+
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.income {
+    color: #4caf50;
+}
+
+.expense {
+    color: #f44336;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Clear All Transactions Button */
+.clear-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f86258;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.w-full{
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2px 0;
+}
